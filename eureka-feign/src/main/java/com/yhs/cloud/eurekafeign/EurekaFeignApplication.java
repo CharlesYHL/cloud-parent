@@ -1,27 +1,20 @@
-package com.yhs.cloud.eurekaribbon;
+package com.yhs.cloud.eurekafeign;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableDiscoveryClient
+@EnableFeignClients
 @EnableHystrix
 @EnableHystrixDashboard
-public class EurekaRibbonApplication {
+public class EurekaFeignApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EurekaRibbonApplication.class, args);
-	}
-
-	@Bean
-	@LoadBalanced
-	RestTemplate restTemplate() {
-		return new RestTemplate();
+		SpringApplication.run(EurekaFeignApplication.class, args);
 	}
 }
