@@ -21,6 +21,7 @@ public class HelloControler {
 
     @RequestMapping(value = "/hi")
     public String hi(@RequestParam String name){
+        System.out.println("api-a开头的请求:"+name);
         return helloService.hiService(name);
     }
 
