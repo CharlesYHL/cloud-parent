@@ -8,3 +8,4 @@
 8.eureka-zuul 路由网关(zuul) 根据不同的请求地址指定不同的服务
 9.eureka-config-server和eureka-config-client 使用分布式配置中心(Spring Cloud Config)
 10.server-parents 包括四个模块  server-zipkin 使用ZipkinServer 的功能，收集调用数据，并展示。server-hi、server-miya和server-third 对外暴露接口 ,该模块使用Spring Cloud Sleuth集成了zipkin组件 执行服务链路追踪
+11.eureka-parents 演示高可用的服务注册中心

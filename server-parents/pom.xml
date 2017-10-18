@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
+   <parent>
         <artifactId>cloud-parent</artifactId>
         <groupId>com.yhs.cloud</groupId>
         <version>1.0-SNAPSHOT</version>
@@ -10,6 +10,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>server-parents</artifactId>
+
+<!--    <modules>
+        <module>server-hi</module>
+        <module>server-miya</module>
+        <module>server-third</module>
+        <module>server-zipkin</module>
+    </modules>-->
 
 
 </project>
